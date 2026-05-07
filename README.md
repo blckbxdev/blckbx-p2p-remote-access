@@ -87,7 +87,7 @@ npm run tauri dev
 ``` bash
 npm run tauri build
 ```
-<img width="1273" height="463" alt="image" src="https://github.com/user-attachments/assets/a024bb44-e28e-40b7-936b-6bed17409702" />
+<img width="1116" height="597" alt="image" src="https://github.com/user-attachments/assets/48afb3ac-f583-4b61-a5db-c6d3b4a1de0c" />
 
 ## troubleshooting
 
