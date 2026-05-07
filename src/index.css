@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  --bx-bg: #050505;
+  --bx-surface: #0c0c0c;
+  --bx-elevated: #121212;
+  --bx-border: rgba(255, 255, 255, 0.08);
+  --bx-border-strong: rgba(255, 255, 255, 0.14);
+  --bx-muted: rgba(255, 255, 255, 0.45);
+  --bx-fg: rgba(255, 255, 255, 0.92);
+  --bx-pointer-x: 50vw;
+  --bx-pointer-y: 40vh;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: var(--bx-bg);
+  color: var(--bx-fg);
+}
+
+/* Presenter is a tiny transparent WebviewWindow: never paint an opaque page background */
+html.bx-presenter-shell,
+html.bx-presenter-shell body {
+  margin: 0;
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+html.bx-presenter-shell #root {
+  height: 100%;
+  min-height: 100%;
+  background: transparent;
+}
+
+/* subtle mesh + soft highlight near pointer */
+.bx-grid-reactive::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-image:
+    radial-gradient(
+      520px 460px ellipse at var(--bx-pointer-x) var(--bx-pointer-y),
+      rgba(255, 255, 255, 0.068),
+      transparent 55%
+    ),
+    linear-gradient(rgba(255, 255, 255, 0.032) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.032) 1px, transparent 1px);
+  background-size: auto, 48px 48px, 48px 48px;
+}
+
+.bx-grid-bg {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 48px 48px;
+}

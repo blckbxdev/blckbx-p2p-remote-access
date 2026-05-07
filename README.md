@@ -6,12 +6,12 @@ connect (view or control) using a single access code.
 
 ## quick start (host → viewer)
 
-1.  host (person whos pc is controled)
+1.  host (share)
     -   open the app and go to share
     -   click start hosting
     -   approve the windows screen capture prompt when it appears
     -   copy the access code
-2.  viewer (person who controls)
+2.  viewer (connect)
     -   open the app on the viewer machine and go to connect
     -   paste the access code
     -   click connect
