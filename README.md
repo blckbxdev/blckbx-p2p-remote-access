@@ -1,4 +1,4 @@
-# blckbx remote access
+<img width="500" height="500" alt="blckbx-logo" src="https://github.com/user-attachments/assets/26780499-919a-4e38-9fa0-7c20290a3071" /> # blckbx remote access
 
 blckbx remote access is a windows desktop app built with tauri + react +
 webrtc that lets one machine host (share screen) and another machine
